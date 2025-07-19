@@ -5,6 +5,26 @@ function updateCurrentTime() {
 setInterval(updateCurrentTime, 1000);
 updateCurrentTime();
 
+function updateWelcomeText(name) {
+  const welcomeEl = document.getElementById('welcomeName');
+  if (name.trim() !== "") {
+    welcomeEl.textContent = `Hi ${name}, Selamat Datang di Berdikari`;
+  } else {
+    welcomeEl.textContent = "Selamat Datang di Berdikari";
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const initialName = document.getElementById('name').value;
+  updateWelcomeText(initialName);
+});
+
+
+document.getElementById('name').addEventListener('input', function () {
+  updateWelcomeText(this.value);
+});
+
+
 document.getElementById('contactForm').addEventListener('submit', function (e) {
   e.preventDefault();
   const name = document.getElementById('name').value;
