@@ -1,11 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Halaman Main</title>
-    </head>
-    <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Berdikari - Bersama Jaga Lingkungan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-    </body>
+  <!-- Navbar -->
+  <header class="fixed w-full bg-white shadow z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
+      <a href="#home" class="text-green-600 font-bold text-lg">🌿 Berdikari</a>
+      <nav class="space-x-4 hidden md:block">
+        <a href="#home" class="hover:text-green-600">Home</a>
+        <a href="#profile" class="hover:text-green-600">Our Profile</a>
+        <a href="#portfolio" class="hover:text-green-600">Portfolio</a>
+        <a href="#contact" class="hover:text-green-600">Message Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-16">
+
+    <!-- Home Section -->
+    <section id="home" class="h-screen flex flex-col justify-center items-center text-center bg-green-100">
+      <h1 class="text-4xl font-bold text-green-700">Selamat Datang di Berdikari</h1>
+      <p class="mt-4 text-lg max-w-xl">
+        Bersama kita menjaga bumi untuk masa depan yang lebih hijau 🌍. Bergabunglah dalam gerakan peduli lingkungan dan mulai perubahan dari diri sendiri.
+      </p>
+      <div class="mt-8 w-full max-w-2xl h-64 bg-green-200 flex items-center justify-center rounded-lg shadow-inner">
+        <span class="text-green-800 text-xl">
+            <img src="IMAGES/banner-save earth.jpg" class="w-full max-w-2xl h-64">
+        </span>
+      </div>
+    </section>
+
+    <!-- Our Profile Section -->
+    <section id="profile" class="py-16 bg-white">
+      <div class="max-w-5xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-semibold text-green-700">Tentang Kami</h2>
+        <p class="mt-4 text-gray-700">
+          Berdikari adalah gerakan sosial yang fokus pada edukasi, aksi, dan kolaborasi untuk pelestarian lingkungan hidup. 
+        </p>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-4 bg-green-50 rounded-lg shadow">
+            <h3 class="font-bold text-green-600">🌱 Visi</h3>
+            <p class="mt-2">Mewujudkan masyarakat mandiri yang peduli lingkungan untuk keberlanjutan bumi.</p>
+          </div>
+          <div class="p-4 bg-green-50 rounded-lg shadow">
+            <h3 class="font-bold text-green-600">💡 Misi</h3>
+            <ul class="mt-2 text-left list-disc list-inside">
+              <li>Mengedukasi tentang lingkungan</li>
+              <li>Program penghijauan & pengelolaan sampah</li>
+              <li>Kemitraan komunitas & organisasi</li>
+              <li>Kampanye gaya hidup berkelanjutan</li>
+            </ul>
+          </div>
+          <div class="p-4 bg-green-50 rounded-lg shadow">
+            <h3 class="font-bold text-green-600">👥 Siapa Kami</h3>
+            <p class="mt-2">Relawan & pecinta alam yang percaya setiap langkah kecil berarti besar untuk bumi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-green-50">
+      <div class="max-w-5xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-semibold text-green-700">Portfolio</h2>
+        <p class="mt-4 text-gray-700">
+          Beberapa aksi nyata kami dalam menjaga bumi:
+        </p>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+            <h3 class="font-bold text-green-600">🌳 Program 1000 Pohon</h3>
+            <p class="mt-2">Penanaman pohon di area rawan banjir di 3 kota besar.</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+            <h3 class="font-bold text-green-600">🏖️ Bersih Pantai Bersama</h3>
+            <p class="mt-2">Aksi bersih pantai dengan dukungan 500+ relawan.</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+            <h3 class="font-bold text-green-600">🏫 Edukasi Sekolah Hijau</h3>
+            <p class="mt-2">Workshop tentang pengelolaan sampah & energi terbarukan.</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+            <h3 class="font-bold text-green-600">📱 Kampanye Digital #HijaukanBumi</h3>
+            <p class="mt-2">Mengajak masyarakat berkomitmen menjaga lingkungan di media sosial.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Message Us Section -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="max-w-5xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-semibold text-green-700">Message Us</h2>
+        <p class="mt-4 text-gray-700">
+          Kirimkan pesan, ide, atau ajakan kolaborasi kepada kami:
+        </p>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Form -->
+          <form id="contactForm" class="bg-green-50 p-6 rounded-lg shadow text-left">
+            <div class="mb-4">
+              <label class="block mb-1 font-medium">Nama</label>
+              <input type="text" id="name" class="w-full border border-gray-300 rounded px-3 py-2" placeholder="Nama" required />
+            </div>
+            <div class="mb-4">
+              <label class="block mb-1 font-medium">Tanggal Lahir</label>
+              <input type="date" id="dob" class="w-full border border-gray-300 rounded px-3 py-2" required />
+            </div>
+            <div class="mb-4">
+              <label class="block mb-1 font-medium">Jenis Kelamin</label>
+              <div class="flex space-x-4">
+                <label><input type="radio" name="gender" value="Laki-laki" required /> Laki-laki</label>
+                <label><input type="radio" name="gender" value="Perempuan" required /> Perempuan</label>
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="block mb-1 font-medium">Pesan</label>
+              <textarea id="messageText" rows="3" class="w-full border border-gray-300 rounded px-3 py-2" placeholder="Pesan" required></textarea>
+            </div>
+            <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Kirim</button>
+          </form>
+
+          <!-- Preview -->
+          <div class="bg-green-50 p-6 rounded-lg shadow text-left">
+            <p class="text-gray-600 mb-2"><strong>Current Time:</strong> <span id="currentTime"></span></p>
+            <div id="preview">
+              <p><strong>Nama:</strong> -</p>
+              <p><strong>Tanggal Lahir:</strong> -</p>
+              <p><strong>Jenis Kelamin:</strong> -</p>
+              <p><strong>Pesan:</strong> -</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center bg-green-100 text-green-700">
+    © 2025 Berdikari - Bersama Jaga Lingkungan
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
 </html>
